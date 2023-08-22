@@ -14,5 +14,10 @@ public class Ex1 {
 		}
 		System.out.println(Arrays.toString(numbers));
 
+		// reassign the second value in the array to the number `17` 
+    	// print the array to the console
+		numbers[1] = 17;
+		System.out.println(Arrays.toString(numbers));
+
 	}
 }
