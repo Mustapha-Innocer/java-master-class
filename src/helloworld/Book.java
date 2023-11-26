@@ -6,5 +6,5 @@ public class Book {
 	void open() {
 		System.out.println("Opening...");
 	}
-	
+
 }
