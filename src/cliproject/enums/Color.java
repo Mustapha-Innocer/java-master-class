@@ -1,4 +1,4 @@
-package cliproject.car;
+package cliproject.enums;
 
 public enum Color {
 	RED,

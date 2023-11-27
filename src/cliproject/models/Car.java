@@ -1,6 +1,8 @@
-package cliproject.car;
+package cliproject.models;
 
 import java.util.UUID;
+import cliproject.enums.Model;
+import cliproject.enums.Color;
 
 /**
  * Car
@@ -39,6 +41,5 @@ public class Car {
 	public String toString() {
 		return "Car [id=" + id + ", model=" + model + ", isElectric=" + isElectric + ", color=" + color + "]";
 	}
-	
-	
+
 }

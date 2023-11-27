@@ -2,18 +2,18 @@ package cliproject;
 
 import java.util.Scanner;
 
-import cliproject.booking.BookingService;
-import cliproject.car.Car;
-import cliproject.user.User;
-import cliproject.user.UserService;
+import cliproject.dao.BookingDao;
+import cliproject.dao.UserDao;
+import cliproject.models.Car;
+import cliproject.models.User;
 
 public class Main {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
 
-		UserService userService = new UserService();
-		BookingService bookingService = new BookingService();
+		UserDao userService = new UserDao();
+		BookingDao bookingService = new BookingDao();
 
 		while (true) {
 			System.out.println(
@@ -48,6 +48,5 @@ public class Main {
 			System.out.println();
 		}
 		scanner.close();
-
 	}
 }
