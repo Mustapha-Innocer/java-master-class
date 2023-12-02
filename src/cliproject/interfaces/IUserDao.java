@@ -1,9 +1,12 @@
 package cliproject.interfaces;
 
+import java.util.List;
+
 import cliproject.models.User;
 
 public interface IUserDao {
 
-	User[] getAllUsers();
+	List<User> getAllUsers();
+
+	User getUser();
 }
- 

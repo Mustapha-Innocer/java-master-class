@@ -1,18 +1,19 @@
 package cliproject.models;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public class User {
 
 	private UUID id;
 	private String name;
-	private Car[] cars;
+	private List<Car> cars;
 
 	public User(String name) {
 		id = UUID.randomUUID();
 		this.name = name;
-		cars = new Car[2];
+		cars = new ArrayList<>();
 	}
 
 	public UUID getId() {
@@ -23,13 +24,13 @@ public class User {
 		return name;
 	}
 
-	public Car[] getCars() {
+	public List<Car> getCars() {
 		return cars;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", cars=" + Arrays.toString(cars) + "]";
+		return "User [id=" + id + ", name=" + name + ", cars=" + cars + "]";
 	}
 
 }
